@@ -1,33 +1,47 @@
 # Swing Transformer — Visual, Didactic Transformer Simulator (Java)
 
 
----
-
-## Project Status
-
-This repository is **work-in-progress**. 
-
----
-
-
 
 A **desktop-first** (Java Swing) project that makes Transformer mechanics **explicit** and **inspectable**.
 
+This project is intentionally not built with PyTorch, JAX, or Transformers libraries.
+It is meant to make the mechanics visible — not hidden behind abstractions.
+
 This is **not** a production LLM implementation.
+
+Tokenization, attention and logits are intentionally simulated
+and are **not compatible with real trained models**.
+
 It is a **visual simulator** designed to help you understand the flow:
 
-1) text input → 2) tokenization → 3) (fake) attention → 4) (fake) logits → 5) decoding → 6) final response
+1) text input  
+2) tokenization  
+3) (simulated) attention  
+4) (simulated) logits  
+5) decoding  
+6) final response
 
-You can optionally plug in a real backend later (e.g., call a local LLaMA binary), but the default mode is fully offline and deterministic.
 
 ---
 
-## Why Swing?
+## Why Swing (Yes, Really)
 
-Swing is intentionally used here because it is:
-- deterministic and great for step-by-step inspection,
+Yes, Swing is old.
+
+That’s fine.
+
+Modern frameworks are great at hiding complexity.
+This project does the opposite: it tries to show what’s going on.
+
+Swing keeps state changes visible.
+Nothing happens “by magic” behind the scenes.
+
+That makes it a good fit for a step-by-step, inspectable simulator.
+
+It’s also:
+- deterministic,
 - easy to ship as a single desktop tool,
-- perfect for an “instrument panel” UI (tokens, matrices, logits, decoding trace).
+- well suited for an “instrument panel” style UI (tokens, matrices, logits, decoding trace).
 
 ---
 
@@ -52,15 +66,66 @@ Swing is intentionally used here because it is:
 ## Requirements
 
 - Java 17+  
-- Gradle (wrapper not included in this draft)
+- Gradle 
+
+Gradle is only required for building the project.
+End users do **not** need Gradle.
 
 ---
 
-## Run
+## Run (Developers)
 
 ```bash
 gradle run
 ```
+---
+
+## Run (End Users)
+
+Download the executable JAR and run:
+
+```bash
+java -jar swing-transformer.jar
+```
+Or simply double-click run.bat (Windows) / run.sh (Linux, macOS).
+
+---
+
+## What this project is NOT
+
+This project is intentionally **not**:
+- a full LLM implementation
+- a training framework
+- a performance benchmark
+- a replacement for real inference engines
+
+Its goal is **understanding**, not optimization.
+
+---
+
+## How to demo this project (3 minutes)
+
+1. Run the application.
+2. Enter a short prompt (one sentence is enough).
+3. Click **Run**.
+4. Inspect:
+   - how text is tokenized,
+   - how attention matrices change per step,
+   - how logits influence decoding,
+   - how the final response is formed token by token.
+
+---
+
+## Why this exists
+
+Many modern frameworks optimize for performance and abstraction.
+This project goes in the opposite direction.
+
+It exists to make internal states visible,
+even if that means being slower, simpler,
+or less "realistic" than production systems.
+
+
 ---
 
 ## Author
