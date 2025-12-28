@@ -12,3 +12,10 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+/bin/
+
+# Eclipse
+bin/
+.settings/
+.classpath
+.project
