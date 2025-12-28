@@ -80,14 +80,32 @@ gradle run
 ```
 ---
 
-## Run (End Users)
+## Download & Run (End Users)
 
-Download the executable JAR and run:
+1. Go to the **Releases** section of this repository.
+2. Download the file: `swing-transformer.jar`.
+3. Run it using one of the options below.
+
+**Option A — Any OS**
 
 ```bash
 java -jar swing-transformer.jar
 ```
-Or simply double-click run.bat (Windows) / run.sh (Linux, macOS).
+**Option B — Shortcut**
+
+Windows: double-click run.bat 
+
+Linux / macOS: ./run.sh
+
+> Windows users,
+> 
+> `run.bat` only executes:
+> 
+> java -jar swing-transformer.jar
+> 
+> No files are modified, no network access is performed,
+> and no administrative privileges are required.
+
 
 ---
 
