@@ -83,7 +83,7 @@ End users do **not** need Gradle.
 ## Run (Developers)
 
 ```bash
-gradle run
+gradlew run
 ```
 ---
 
