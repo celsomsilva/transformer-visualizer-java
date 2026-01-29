@@ -4,6 +4,9 @@
 
 A **desktop-first** (Java Swing) project that makes Transformer mechanics **explicit** and **inspectable**.
 
+
+
+
 This project is intentionally not built with PyTorch, JAX, or Transformers libraries.
 It is meant to make the mechanics visible — not hidden behind abstractions.
 
@@ -43,6 +46,9 @@ It’s also:
 - easy to ship as a single desktop tool,
 - well suited for an “instrument panel” style UI (tokens, matrices, logits, decoding trace).
 
+Core logic is covered by unit tests (UI is intentionally excluded).
+
+
 ---
 
 ## Features
@@ -60,6 +66,7 @@ It’s also:
 - `src/main/java/.../ui` — Swing UI panels
 - `src/main/java/.../core` — tokenizer, simulator, decoding logic
 - `src/main/java/.../backend` — pluggable backend interface (mock by default)
+- `src/test/java/.../core`— Tests    
 
 ---
 
@@ -79,6 +86,14 @@ End users do **not** need Gradle.
 gradle run
 ```
 ---
+
+## Run tests (Developers)
+
+``` bash
+gradlew test
+```
+---
+
 
 ## Download & Run (End Users)
 
