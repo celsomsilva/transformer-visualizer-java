@@ -1,5 +1,6 @@
 # Swing Transformer — Visual, Didactic Transformer Simulator (Java)
 
+> “A data scientist is not a button pusher.” — Prof. Luiz Paulo Fávero - USP
 
 
 A **desktop-first** (Java Swing) project that makes Transformer mechanics **explicit** and **inspectable**.
@@ -166,7 +167,7 @@ or less "realistic" than production systems.
 This project was developed by an engineer and data scientist with a background in:
 
 * Postgraduate degree in **Data Science and Analytics (USP)**
-* Bachelor's degree in **Computer Engineering (UERJ)**
+* Bachelor of **Science in Electrical and Computer Engineering (UERJ)**
 * Special interest in statistical models, interpretability, and applied AI
 
 ---
