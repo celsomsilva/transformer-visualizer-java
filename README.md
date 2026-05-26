@@ -1,4 +1,5 @@
-# Swing Transformer — Visual, Didactic Transformer Simulator (Java)
+# Transformer Visualizer Java
+## Swing Transformer — Visual, Didactic Transformer Simulator (Java)
 
 > “A data scientist is not a button pusher.” — Prof. Luiz Paulo Fávero - USP
 
