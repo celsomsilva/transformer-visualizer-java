@@ -10,7 +10,7 @@ A **desktop-first** (Java Swing) project that makes Transformer mechanics **expl
 
 
 This project is intentionally not built with PyTorch, JAX, or Transformers libraries.
-It is meant to make the mechanics visible — not hidden behind abstractions.
+It is meant to make the mechanics visible, not hidden behind abstractions.
 
 This is **not** a production LLM implementation.
 
@@ -170,6 +170,7 @@ This project was developed by an engineer and data scientist with a background i
 * Postgraduate degree in **Data Science and Analytics (USP)**
 * Bachelor of **Science in Electrical and Computer Engineering (UERJ)**
 * Special interest in statistical models, interpretability, and applied AI
+* Strong interest in algorithmic reasoning, correctness, and performance evaluation
 
 ---
 
