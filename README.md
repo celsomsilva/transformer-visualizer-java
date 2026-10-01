@@ -1,7 +1,7 @@
 # Transformer Visualizer Java
-## Swing Transformer — Visual, Didactic Transformer Simulator (Java)
+## Swing Transformer - Visual, Didactic Transformer Simulator (Java)
 
-> “A data scientist is not a button pusher.” — Prof. Luiz Paulo Fávero - USP
+> “A data scientist is not a button pusher.” - Prof. Luiz Paulo Fávero - USP
 
 
 A **desktop-first** (Java Swing) project that makes Transformer mechanics **explicit** and **inspectable**.
@@ -65,10 +65,10 @@ Core logic is covered by unit tests (UI is intentionally excluded).
 
 ## Project Structure
 
-- `src/main/java/.../ui` — Swing UI panels
-- `src/main/java/.../core` — tokenizer, simulator, decoding logic
-- `src/main/java/.../backend` — pluggable backend interface (mock by default)
-- `src/test/java/.../core`— Tests    
+- `src/main/java/.../ui` - Swing UI panels
+- `src/main/java/.../core` - tokenizer, simulator, decoding logic
+- `src/main/java/.../backend` - pluggable backend interface (mock by default)
+- `src/test/java/.../core`- Tests    
 
 ---
 
@@ -103,12 +103,12 @@ gradlew test
 2. Download the file: `swing-transformer.jar`.
 3. Run it using one of the options below.
 
-**Option A — Any OS**
+**Option A - Any OS**
 
 ```bash
 java -jar swing-transformer.jar
 ```
-**Option B — Shortcut**
+**Option B - Shortcut**
 
 Windows: double-click run.bat 
 
