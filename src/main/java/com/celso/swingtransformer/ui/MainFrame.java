@@ -20,7 +20,7 @@ public class MainFrame extends JFrame {
     private final ControlsPanel controlsPanel;
 
     public MainFrame(TransformerEngine engine) {
-        super("Swing Transformer — Visual Didactic Simulator");
+        super("Swing Transformer - Visual Didactic Simulator");
         this.engine = engine;
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

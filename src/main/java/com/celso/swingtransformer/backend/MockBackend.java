@@ -28,7 +28,7 @@ public class MockBackend implements ModelBackend {
         }
 
         sb.append("\n\n");
-        sb.append("— (This text is generated from simulated logits, not a real LLM.)\n");
+        sb.append("- (This text is generated from simulated logits, not a real LLM.)\n");
         sb.append(String.format(Locale.US, "seed=%d, topK=%d, temperature=%.2f", config.seed, config.topK, config.temperature));
         return sb.toString();
     }
